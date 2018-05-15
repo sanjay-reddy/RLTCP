@@ -129,7 +129,7 @@ void change_cwnd(uint32_t a, uint32_t b)
 	}
 	else
 	{
-		int reward = getReward(key, action);
+		int reward = getRewardFromAck(key, action);
 		if (action == INC_CWND)
 		{
 			updateQValue(key, INC_CWND, reward);
